@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome{% endblock %}</title>
+        <link rel ="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <nav>
+            <!-- Nav if necessary -->
+        </nav>
+
+        <div class="container bg-slate-50">
+            {% block content %}{% endblock %}
+            <h1 class="text-cyan-100">Flask app deployed.</h1>
+        </div>
+
+        <footer>
+            <!-- Footer if necessary -->
+        </footer>
+
+
+    </body>
+</html>
